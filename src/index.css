@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+@import "tailwindcss";
+
+@utility container {
+  padding: 20px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+@theme {
+  --color-white: #fff;
+  --color-black: #000000;
+  --color-lila: #746AEE;
+  --color-melon-darker: #EFA7A7;
+  --color-melon: #FCBCB8;
+  --color-jasmine: #FFD972;
+  --color-celadon: #A7E8BD;
+  --color-mint: #C7EAE4;
+  --color-smoke: #FAF8F8;
+
+  /* darker */
+  --color-lila-darker: #5C5CD6;       /* Más oscuro que #746AEE */
+  --color-melon-2xdarker: #D98C8C; /* Más oscuro que #EFA7A7 */
+  --color-melon-1xdarker: #E5A5A1;        /* Más oscuro que #FCBCB8 */
+  --color-jasmine-darker: #E6B850;     /* Más oscuro que #FFD972 */
+  --color-celadon-darker: #85C89D;     /* Más oscuro que #A7E8BD */
+  --color-mint-darker: #A5D1CB; 
+
+  --font-inconsolata: "Inconsolata", serif;
+}
+
+/* Backgrounds */
+.bg-white {
+  background-color: var(--color-white)
+}
+
+.bg-black {
+  background-color: var(--color-black)
+}
+
+.bg-lila {
+  background-color: var(--color-lila)
+}
+
+.bg-melon-darker {
+  background-color: var(--color-melon-darker)
+}
+
+.bg-melon {
+  background-color: var(--color-melon)
+}
+
+.bg-jasmine {
+  background-color: var(--color-jasmine)
+}
+
+.bg-celadon {
+  background-color: var(--color-celadon)
+}
+
+.bg-mint {
+  background-color: var(--color-mint)
+}
+
+.bg-smoke {
+  background-color: var(--color-smoke)
+}
+
+/* bg darker */
+
+.bg-lila-darker {
+  background-color: var(--color-lila-darker)
+}
+  
+.bg-melon-2xdarker {
+  background-color: var(--color-melon-2xdarker)
+}
+  
+.bg-melon-1xdarker {
+  background-color: var(--color-melon-1xdarker)
+}
+  
+.bg-jasmine-darker {
+  background-color: var(--color-jasmine-darker)
+}
+  
+.bg-celadon-darker {
+  background-color: var(--color-celadon-darker)
+}
+  
+.bg-mint-darker {
+  background-color: var(--color-mint-darker)
+}
+
+
+
+/* Color text */
+
+/* Font Family */
+.font-inconsolata {
+  font-family: var(--font-inconsolata);
+}
