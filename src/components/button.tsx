@@ -1,18 +1,26 @@
 import React, { FC } from "react";
 import { cn } from "../lib/utils";
 
+type TVariant = "mint" | "melon" 
+
+const variants: Record<TVariant, string> = {
+    mint: "bg-mint hover:contrast-125",
+    melon: "bg-melon hover:contrast-125"
+}
+
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+    variant: TVariant
     disabled?: boolean
 }
  
-const Button: FC<ButtonProps> = ({className, disabled, ...props}) => {
+const Button: FC<ButtonProps> = ({children, className, variant="mint", disabled, ...props}) => {
   
     return(
         <button 
-            className={cn("p-3 border cursor-pointer", className)} 
+            className={cn("px-5 py-2 border border-b-3 border-r-3 cursor-pointer rounded-lg", className, variants[variant])} 
             disabled={disabled} 
             {...props}>
-            hello
+            {children}
         </button>
     )
 }
