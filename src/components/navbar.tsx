@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0
-            py-4 w-screen">
+            py-4 w-screen backdrop-blur-3xl">
             <ul className="flex justify-center space-x-20">
                 {navItems.map((item) => (
                     <li key={item.id}>
