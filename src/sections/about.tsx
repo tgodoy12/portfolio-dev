@@ -2,7 +2,7 @@ import Profile from "../assets/profile.jpg"
 
 const About = () => {
     return (
-        <div id="about" className="flex min-h-[50vh] items-center justify-center">
+        <div className="flex min-h-[50vh] items-center justify-center">
 
 
             <div className="about-text">

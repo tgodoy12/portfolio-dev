@@ -1,6 +1,7 @@
 import Navbar from './components/navbar'
 import Home from './sections/home'
 import About from './sections/about'
+import Projects from './sections/projects'
 
 function App() {
   
@@ -11,8 +12,8 @@ function App() {
       <main>
         <section id="landing"><Home /></section>
         <section id="about"><About /></section>
-        {/* <section id="projects"><Projects /></section>
-        <section id="contact"><Contact /></section> */}
+        <section id="projects"><Projects /></section>
+        {/* <section id="contact"><Contact /></section> */}
       </main>
   
     </div>
