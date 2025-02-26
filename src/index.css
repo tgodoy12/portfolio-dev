@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
 @import "tailwindcss";
 
 @utility container {
@@ -20,14 +28,17 @@
   --color-smoke: #FAF8F8;
 
   /* darker */
-  --color-lila-darker: #5C5CD6;       /* Más oscuro que #746AEE */
-  --color-melon-2xdarker: #D98C8C; /* Más oscuro que #EFA7A7 */
-  --color-melon-1xdarker: #E5A5A1;        /* Más oscuro que #FCBCB8 */
-  --color-jasmine-darker: #E6B850;     /* Más oscuro que #FFD972 */
-  --color-celadon-darker: #85C89D;     /* Más oscuro que #A7E8BD */
+  --color-lila-darker: #5C5CD6;       
+  --color-melon-2xdarker: #D98C8C; 
+  --color-melon-1xdarker: #E5A5A1;     
+  --color-jasmine-darker: #E6B850;     
+  --color-celadon-darker: #85C89D;  
   --color-mint-darker: #A5D1CB; 
 
   --font-inconsolata: "Inconsolata", serif;
+  --font-press-start-2p: "Press Start 2P", serif;
+  --font-vtv23: "VT323", serif;
+  --font-oxanium: "Oxanium", serif;
 }
 
 /* Backgrounds */
@@ -96,8 +107,76 @@
 
 
 /* Color text */
+.text-melon-darker {
+  color: var(--color-melon-1xdarker);
+}
+.text-lila {
+  color: var(--color-lila);
+}
+.text-melon {
+  color: var(--color-melon);
+}
+.text-jasmine {
+  color: var(--color-jasmine);
+}
+.text-celadon {
+  color: var(--color-celadon);
+}
+.text-mint {
+  color: var(--color-mint);
+}
+
+/* Color text -darker */
+.text-mint-darker {
+  color: var(--color-mint-darker);
+}
+
+
 
 /* Font Family */
 .font-inconsolata {
   font-family: var(--font-inconsolata);
+}
+
+.font-press-start-2p {
+  font-family: var(--font-press-start-2p);
+}
+
+.font-space-grotesk {
+  font-family: var(--font-vtv23);
+}
+
+.font-oxanium {
+  font-family: var(--font-oxanium);
+}
+
+/* text borders */
+.text-3d {
+  text-shadow: 
+    4px 4px 0 #000,
+    3px 0px 0 #000,
+    0px 3px 0 #000;
+}
+
+.text-border {
+  text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000;
+}
+
+
+
+
+/* background grid */
+.bg-grid {
+  background-color: #ffffff;
+  
+  background-image:  linear-gradient(#000000 1px, transparent 1px), linear-gradient(to right, #000000 1px, #ffffff 1px);
+  background-size: 68px 68px;
 }

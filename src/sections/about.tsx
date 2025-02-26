@@ -7,7 +7,7 @@ const About = () => {
 
             <div className="about-text">
 
-                <h3 className="text-3xl font-semibold">About me</h3>
+                <h3 className="text-3xl font-press-start-2p">About me</h3>
 
                 <p className="text-lg text-justify mt-10 max-w-[40rem]">
                 I am a passionate Fullstack Developer eager to start my professional journey. With a strong foundation in React, JavaScript, Python, and Flask, I enjoy building intuitive and efficient web applications.

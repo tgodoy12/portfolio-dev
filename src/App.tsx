@@ -7,7 +7,7 @@ function App() {
   
 
   return (
-    <div className='container mt-8 font-inconsolata'>
+    <div className='container mt-8 font-oxanium'>
       <Navbar />
       <main>
         <section id="landing"><Home /></section>
