@@ -170,13 +170,3 @@
     -2px 0px 0 #000;
 }
 
-
-
-
-/* background grid */
-.bg-grid {
-  background-color: #ffffff;
-  
-  background-image:  linear-gradient(#000000 1px, transparent 1px), linear-gradient(to right, #000000 1px, #ffffff 1px);
-  background-size: 68px 68px;
-}
