@@ -1,15 +1,22 @@
+import UserIcon from "../components/icons/userIcon"
+// import ProjectIcon from "./icons/projectIcon";
+import ExperienceIcon from "./icons/experienceIcon";
+import SkillsIcon from "./icons/skillsIcon";
+import Suitcase from "./icons/suitcase.svg"
+
+
 const Navbar = () => {
     const navItems = [
-        { name: "Home", id: "home" },
-        { name: "About", id: "about" },
-        { name: "Projects", id: "projects" },
-        { name: "Contact", id: "contact" }
+        { name: "About", id: "about", icon: <UserIcon className="overflow-visible" size={24} color="black" /> },
+        { name: "Projects", id: "projects", icon: Suitcase},
+        { name: "Experience", id: "experience", icon: <ExperienceIcon size={24} color="black" /> },
+        { name: "Skills", id: "skills", icon: <SkillsIcon size={24} color="black" /> }
     ];
 
     return (
         <nav className="fixed top-0 left-0
-            py-4 w-screen backdrop-blur-3xl">
-            <ul className="flex justify-center space-x-20">
+            px-4 w-20 h-screen backdrop-blur-3xl">
+            <ul className="space-y-20">
                 {navItems.map((item) => (
                     <li key={item.id}>
                         <a 
@@ -17,7 +24,7 @@ const Navbar = () => {
                             className="text-2xl 
                                 hover:text-gray-300 transition duration-300"
                         >
-                            {item.name}
+                            {item.icon}
                         </a>
                     </li>
                 ))}
